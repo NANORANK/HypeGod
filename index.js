@@ -2,8 +2,8 @@
 const { Client, GatewayIntentBits, EmbedBuilder, ActionRowBuilder, StringSelectMenuBuilder, SlashCommandBuilder, PermissionFlagsBits, ModalBuilder, TextInputBuilder, TextInputStyle, ButtonBuilder, ButtonStyle } = require('discord.js');
 const axios = require('axios');
 
-const TOKEN = ''; // ใส่โทเค่นบอท
-const ADMIN_IDS = ['1352630562812067930']; // ใส่ไอดีแอดมินคนที่จะใช้คำสั่งบอทได้
+const TOKEN = process.env.DISCORD_TOKEN; // รับจาก Railway ENV
+const ADMIN_IDS = ['1432690520005804092']; // ใส่ไอดีแอดมินคนที่จะใช้คำสั่งบอทได้
 
 const green = 0x00ff00;
 const red = 0xff0000;
